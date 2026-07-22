@@ -9,7 +9,8 @@ namespace OOP
 {
     internal class BankAccount
     {
-
+        #region Fields
+        //fields
         public string BankName { get; set; }
         public string BranchName { get; set; }
         public string BranchAddress { get; set; }
@@ -17,6 +18,26 @@ namespace OOP
         public string AccounCurrency { get; set; }
         public decimal Balance { get; set; }
 
+        #endregion
+
+        //ctor
+        public BankAccount()
+        {
+            Console.WriteLine("ctor is called automatically ");
+        }
+
+        public BankAccount(string bankName, string branchName , string branchaddress , string accNumber , string accCurr , decimal balance)
+        {
+            BankName = bankName;
+            BranchName = branchName;
+            BranchAddress = branchaddress;
+            AccounCurrency = accCurr;
+            Balance = balance;
+            AccountNumber = accNumber;
+
+            
+        }
+        //methods
         public void withdraw(decimal Amount)
         {
             decimal newBalance = Balance - Amount;

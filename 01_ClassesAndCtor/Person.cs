@@ -12,6 +12,11 @@ namespace OOP
     
     internal class Person
     { 
+
+
+
+
+
         //variables
        string firstName;
         string lastName;
